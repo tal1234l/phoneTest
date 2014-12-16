@@ -53,7 +53,6 @@
 	<div data-role="content">
 		<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
 			<li><a href="#login" >Login and logout from the kandy app</a></li>
-			<li><a href="#pastExhibits">Past Exhibits</a></li>
 			<li><a href="">Calendar of Events</a></li>
 			<li><a href="#discoverScreen">[ Discover ]</a></li>
 
@@ -70,7 +69,7 @@
 </div>
 <div id="login" data-role="page">
 	<header data-role="header" data-position="fixed" data-id="appHeader">
-		<h1>Test login and logout from kandy </h1>
+		<h1>Test kandy app</h1>
 		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
 	</header>
 	<div data-role="content">
@@ -79,39 +78,57 @@
         <br/><hr><br/>
         <form id="loginForm">
             Project API Key: <input id="domainApiId" type="text" value=""/><br/>
-            Username: <input id="loginId" type="text"  value=""/><br/>
-            Password: <input id="passwd" type="password"  value=""/><br/>
-            <input id="loginBtn" type="button" value="Log in" onclick="login();return false;" style="margin:5px 110px;"/>
+            Username: <input id="loginId" type="text" value=""/><br/>
+            Password: <input id="passwd" type="password" value=""/><br/>
+            <input id="loginBtn" type="button" value="Log in" onclick="login();return false;" style="height:23px;margin:5px 0 0 110px;"/>
         </form>
-
-        <div id="logoutForm" style="display:none">
-            You've successfully initialized and logged in to Kandy!<br/><br/>
-            Now click here to log out of Kandy:
-            <input id="logoutBtn" type="button" value="Log Out" onclick="logout();" style="height:23px;"/>
+        <br />
+        <div id="logOut" style="display:none">
+            Hello <span id="currentUser"></span> <input type="button" value="Log Out" onclick="logout()" style="height:23px;"/>
         </div>
+        <div id="callOut" style="display:none" >
+            <br/>User to call:
+            <input id="callOutUserId" type="text" value=""/> &nbsp;
+            <input id="callBtn" type="button" value="Call" onclick="makeCall()" style="height:23px;"/>
+        </div>
+        <div id="calling" style="display:none">
+            Calling...
+            <input type="button" value="End Call" onclick="endCall()" style="height:23px;"/>
+        </div>
+        <div id="onCall" style="display:none">
+            You're connected!
+            <input type="button" value="End Call" onclick="endCall()" style="height:23px;"/>
+        </div>
+        <div id="theirVideo" style="display:none;"></div>
 	</div>
 </div>
 
-<div id="pastExhibits" data-role="page">
+<!--<div id="voiceCall" data-role="page">
 	<header data-role="header" data-position="fixed" data-id="appHeader">
-		<h1>SAMOCA</h1>
+		<h1>voice call</h1>
 		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
 	</header>
 	<div data-role="content">
-		<h1 class="center">Past Exhibits</h1>
-		<ul data-role="listview" data-inset="false" class="ui-nodisc-icon ui-alt-icon">
-			<li><a href="#"><img src="imgs/GroundSwell_thumb.png">
-				<h2>Groundswell: Design Series II</h2>
-				<p> </p></a>
-			</li>
-			<li><a href="#"><img src="imgs/Buildings_thumb.png">
-				<h2>Reflections on Architecture: Imagining Buildings</h2>
-				<p> </p></a>
-			</li>
-			
-		</ul>
+		<h1 class="center">call a friend</h1>
+        <div id="logOut" style="display:none">
+            Hello <span id="currentUser"></span> <input type="button" value="Log Out" onclick="logout()" style="height:23px;"/>
+        </div>
+        <div id="callOut" style="display:none" >
+            <br/>User to call:
+            <input id="callOutUserId" type="text" value=""/> &nbsp;
+            <input id="callBtn" type="button" value="Call" onclick="makeCall()" style="height:23px;"/>
+        </div>
+        <div id="calling" style="display:none">
+            Calling...
+            <input type="button" value="End Call" onclick="endCall()" style="height:23px;"/>
+        </div>
+        <div id="onCall" style="display:none">
+            You're connected!
+            <input type="button" value="End Call" onclick="endCall()" style="height:23px;"/>
+        </div>
+        <div id="theirVideo" style="display:none;"></div>
 	</div>
-</div>
+</div>-->
 	
 <div id="mapScreen" data-role="page">
 	<header data-role="header" data-position="fixed" data-id="appHeader">

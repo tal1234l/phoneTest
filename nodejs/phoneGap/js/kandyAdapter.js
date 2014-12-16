@@ -10,10 +10,21 @@ initKandy = function() {
         // respond to Kandy events...
         listeners: {
             loginsuccess: function () {
-                changeUIState('LOGGED_IN');
+                changeUIState('READY_FOR_CALLING');
             },
             loginfailed: function () {
                 alert("Login failed");
+            },
+            oncall: function (call) {
+                changeUIState("ON_CALL");
+            },
+            callended: function() {
+                changeUIState('READY_FOR_CALLING');
+            },
+            // a video tag is being provided (required for both audio and video calls)
+            // you must insert it into the DOM for communication to happen (although for audio calls, it can remain hidden)
+            remotevideoinitialized: function (videoTag) {
+                $('#theirVideo').append(videoTag);
             }
         }
     });
@@ -29,15 +40,46 @@ logout = function() {
     });
 }
 
+makeCall = function() {
+    KandyAPI.Phone.makeVoiceCall($('#callOutUserId').val());
+    changeUIState('CALLING');
+}
+
+endCall = function() {
+    KandyAPI.Phone.endCall();
+    changeUIState('READY_FOR_CALLING');
+}
+
 changeUIState = function(state) {
     switch (state) {
         case 'LOGGED_OUT':
             $("#loginForm").show();
-            $("#logoutForm").hide();
+            $("#logOut").hide();
+            $("#callOut").hide();
+            $("#calling").hide();
+            $('#onCall').hide();
             break;
-        case 'LOGGED_IN':
+        case 'READY_FOR_CALLING':
             $("#loginForm").hide();
-            $("#logoutForm").show();
+            $("#logOut").show();
+            $('#callOut').show();
+            $('#calling').hide();
+            $('#onCall').hide();
+            $('#currentUser').text($('#loginId').val());
+            break;
+        case 'CALLING':
+            $("#loginForm").hide();
+            $("#logOut").hide();
+            $('#callOut').hide();
+            $('#calling').show();
+            $('#onCall').hide();
+            break;
+        case 'ON_CALL':
+            $("#loginForm").hide();
+            $("#logOut").hide();
+            $('#callOut').hide();
+            $('#calling').hide();
+            $('#onCall').show();
             break;
     }
 }
