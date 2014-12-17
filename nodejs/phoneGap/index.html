@@ -29,6 +29,28 @@
 			width: 320px;
 			height: 320px;  
 		}
+        #videos {
+            width:675px
+        }
+        #theirVideo {
+            background-color:darkslategray;
+            width:334px;
+            height:250px;
+            display:inline-block;
+        }
+        #myVideo {
+            background-color:darkslategray;
+            width:334px;
+            height:250px;
+            display:inline-block;
+            float:right
+        }
+        #meLabel {
+            width:340px;
+            text-align:right;
+            display:inline-block
+        }
+
 	</style>
 	<link rel="stylesheet" href="css/leaflet.css" />
 	<script src="js/jquery.js"></script>
@@ -45,9 +67,10 @@
     <script src="https://kandy-portal.s3.amazonaws.com/public/javascript/kandy/1.1.2/kandy.js" ></script>
     <script src="js/KandyAdapter.js"></script>
 
+
 </head>
 	
-<body>
+<body onload="setup();">
 <div id="homeScreen" data-role="page">
 	<img src="imgs/SAMOCA_banner_1.png" class="banner" />
 	<div data-role="content">
@@ -76,13 +99,24 @@
         <h2>Quick Start Sample App: Log In</h2>
         This sample application demonstrates the code for initializing, logging in to and logging out of Kandy.
         <br/><hr><br/>
-        <form id="loginForm">
-            Project API Key: <input id="domainApiId" type="text" value=""/><br/>
-            Username: <input id="loginId" type="text" value=""/><br/>
+        <div id="loggedIn" style="display:none">
+            Hello <span id="loggedInAs"></span>.
+            <input id="logoutBtn" type="button" value="Log Out" onclick="logout();return false;" style="height:23px;"/>
+        </div>
+
+        <form id="logInForm">
+            Username: <input id="logInId" type="text" value=""/><br/>
             Password: <input id="passwd" type="password" value=""/><br/>
-            <input id="loginBtn" type="button" value="Log in" onclick="login();return false;" style="height:23px;margin:5px 0 0 110px;"/>
+            <input id="loginBtn" type="button" value="Log in" onclick="login();return false;" style="height:23px;"/>
         </form>
         <br />
+        <div id="someonesCalling" style="display:none">
+            <br/><br/>
+            Incoming Call
+            <input id="answerVideoCallBtn" type="button" value="Answer" onclick="answerVideoCall()" style=height:23px;"/>
+            <input id="otherPartyName" type="hidden" /><br/><br/>
+        </div>
+
         <div id="logOut" style="display:none">
             Hello <span id="currentUser"></span> <input type="button" value="Log Out" onclick="logout()" style="height:23px;"/>
         </div>
@@ -99,7 +133,13 @@
             You're connected!
             <input type="button" value="End Call" onclick="endCall()" style="height:23px;"/>
         </div>
-        <div id="theirVideo" style="display:none;"></div>
+
+        <div id="videos">
+            Them:<span id="meLabel">Me:</span>
+            <span id="theirVideo" style="display:inline-block"></span>
+            <span id="myVideo"></span>
+        </div>
+
 	</div>
 </div>
 
