@@ -112,7 +112,9 @@ if (peer && peer.pc) {
     }
 });
 }
+
 remotes.appendChild(container);
+setLogoutButton(false);
 }
 });
 // a peer was removed
@@ -161,22 +163,17 @@ return false;
 var logoutButton = $('#leaveRoom'),
     setLogoutButton = function (bool) {
         if(bool)
-        {
-            logoutButton.attr('disabled', 'disabled');
-        }
-        
+            {logoutButton.attr('disabled', 'disabled');}
+        else
+            {logoutButton.removeAttr("disabled");}
     };
     logoutButton.text('Leave Room');
-    debugger;
-    //check if we are in a room
-    //if (!webrtc.capabilities.screenSharing) {
-        //logoutButton.attr('disabled', 'disabled');
-    //}
-
-webrtc.on('localScreenRemoved', function () {
+setLogoutButton(true);
+$('#leaveRoom').click(function() {
+    webrtc.leaveRoom();
     setLogoutButton(true);
+    window.location.href = location.origin;
 });
-setLogoutButton(false);
 
 
 //share screen button

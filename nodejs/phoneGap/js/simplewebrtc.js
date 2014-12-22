@@ -294,6 +294,7 @@
         };
 
         SimpleWebRTC.prototype.joinRoom = function (name, cb) {
+            debugger;
             var self = this;
             this.roomName = name;
             this.connection.emit('join', name, function (err, roomDescription) {
