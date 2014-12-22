@@ -12,7 +12,7 @@ var webrtc = new SimpleWebRTC({
     // the id/element dom element that will hold remote videos
     remoteVideosEl: '',
     // immediately ask for camera access
-    autoRequestMedia: true,
+    autoRequestMedia: false,
     debug: false,
     detectSpeakingEvents: true,
     autoAdjustMic: false
@@ -133,7 +133,7 @@ webrtc.on('volumeChange', function (volume, treshold) {
 // Since we use this twice we put it here
 function setRoom(name) {
     $('form').remove();
-    $('h1').text(name);
+    $('h1').text("Room number: "+name);
     $('#subTitle').text('Link to join: ' + location.href);
     $('body').addClass('active');
     }
@@ -157,7 +157,29 @@ setRoom(name);
 return false;
 });
 }
+//logout button
+var logoutButton = $('#leaveRoom'),
+    setLogoutButton = function (bool) {
+        if(bool)
+        {
+            logoutButton.attr('disabled', 'disabled');
+        }
+        
+    };
+    logoutButton.text('Leave Room');
+    debugger;
+    //check if we are in a room
+    //if (!webrtc.capabilities.screenSharing) {
+        //logoutButton.attr('disabled', 'disabled');
+    //}
 
+webrtc.on('localScreenRemoved', function () {
+    setLogoutButton(true);
+});
+setLogoutButton(false);
+
+
+//share screen button
 var button = $('#screenShareButton'),
 setButton = function (bool) {
     button.text(bool ? 'share screen' : 'stop sharing');

@@ -75,7 +75,7 @@
 	<div data-role="content">
 		<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
 			<li><a href="#login" >kandy app</a></li>
-			<li><a href="#Xirsys">Xirsys App</a></li>
+			<li><a href="#Xirsys" id="xirsysNAVbtn" >Xirsys App</a></li>
 			<li><a href="#discoverScreen">[ Discover ]</a></li>
 
 		</ul>
@@ -155,6 +155,9 @@
     </form>
     <p id="subTitle"></p>
     <div>
+        <button id="leaveRoom"></button>
+    </div>
+    <div>
         <button id="screenShareButton"></button>
         (https required for screensharing to work)
     </div>
@@ -222,10 +225,15 @@
 	</div>
 </div>
 
+    <!--xirsys-->
+    <script src="js/simplewebrtc.js"></script>
+    <script src="js/webRTCAdaptor.js"></script>
 
-<!--xirsys-->
-<script src="js/simplewebrtc.js"></script>
-<script src="js/webRTCAdaptor.js"></script>
+    <script>
+        $("#xirsysNAVbtn").click(function() {
+            webrtc.startLocalVideo();
+        });
+    </script>
 
 </body>
 </html>
