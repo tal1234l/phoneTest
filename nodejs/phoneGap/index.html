@@ -61,12 +61,11 @@
 	<script src="phonegap.js"></script>
 	<script src="barcodescanner.js"></script>
 
-
+    <!--Kandy-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="https://kandy-portal.s3.amazonaws.com/public/javascript/fcs/3.0.0/fcs.js" ></script>
     <script src="https://kandy-portal.s3.amazonaws.com/public/javascript/kandy/1.1.4/kandy.js" ></script>
     <script src="js/KandyAdapter.js"></script>
-
 
 </head>
 	
@@ -75,8 +74,8 @@
 	<img src="imgs/SAMOCA_banner_1.png" class="banner" />
 	<div data-role="content">
 		<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
-			<li><a href="#login" >Login and logout from the kandy app</a></li>
-			<li><a href="">Calendar of Events</a></li>
+			<li><a href="#login" >kandy app</a></li>
+			<li><a href="#Xirsys">Xirsys App</a></li>
 			<li><a href="#discoverScreen">[ Discover ]</a></li>
 
 		</ul>
@@ -143,33 +142,43 @@
 	</div>
 </div>
 
-<!--<div id="voiceCall" data-role="page">
-	<header data-role="header" data-position="fixed" data-id="appHeader">
-		<h1>voice call</h1>
-		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
-	</header>
-	<div data-role="content">
-		<h1 class="center">call a friend</h1>
-        <div id="logOut" style="display:none">
-            Hello <span id="currentUser"></span> <input type="button" value="Log Out" onclick="logout()" style="height:23px;"/>
-        </div>
-        <div id="callOut" style="display:none" >
-            <br/>User to call:
-            <input id="callOutUserId" type="text" value=""/> &nbsp;
-            <input id="callBtn" type="button" value="Call" onclick="makeCall()" style="height:23px;"/>
-        </div>
-        <div id="calling" style="display:none">
-            Calling...
-            <input type="button" value="End Call" onclick="endCall()" style="height:23px;"/>
-        </div>
-        <div id="onCall" style="display:none">
-            You're connected!
-            <input type="button" value="End Call" onclick="endCall()" style="height:23px;"/>
-        </div>
-        <div id="theirVideo" style="display:none;"></div>
-	</div>
-</div>-->
-	
+
+<div id="Xirsys" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+        <h1>Test kandy app</h1>
+        <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <h1 id="title">Start a room</h1>
+    <form id="createRoom">
+        <input id="sessionInput"/>
+        <button disabled type="submit">Create it!</button>
+    </form>
+    <p id="subTitle"></p>
+    <div>
+        <button id="screenShareButton"></button>
+        (https required for screensharing to work)
+    </div>
+    <hr>
+    <div class="videoContainer">
+        <video id="localVideo" style="height: 150px;" oncontextmenu="return false;"></video>
+        <div id="localVolume" class="volumeBar"></div>
+    </div>
+    <div id="localScreenContainer" class="videoContainer">
+    </div>
+    <div id="remotes"></div>
+    <hr>
+    <div>
+        <h3>A note on connectivity issues</h3>
+        If you see black videos from peers or the connection state displayed ontop of those videos
+        either hangs in <i>Connecting to peer...</i> or changes to <i>Connection failed</i>, a direct peer-to-peer connection could not be established.
+        <br>
+        This typically means that a TURN server is required. This <a href="http://www.html5rocks.com/en/tutorials/webrtc/infrastructure/#after-signaling-using-ice-to-cope-with-nats-and-firewalls">tutorial</a> explains the problem.
+        You can check if those peers can connect each other on <a href="https://talky.io">talky.io</a> which runs a TURN server.
+    </div>
+
+
+</div>
+
 <div id="mapScreen" data-role="page">
 	<header data-role="header" data-position="fixed" data-id="appHeader">
 		<h1>SAMOCA</h1>
@@ -212,6 +221,11 @@
 		<p class="center">123 Main Street Ventura, CA 12345 (800) 555-1212</p>
 	</div>
 </div>
+
+
+<!--xirsys-->
+<script src="js/simplewebrtc.js"></script>
+<script src="js/webRTCAdaptor.js"></script>
 
 </body>
 </html>
