@@ -5,6 +5,31 @@
 // grab the room from the URL
 var room = location.search && location.search.split('?')[1];
 
+// This object will take in an array of XirSys STUN / TURN servers
+// and override the original peerConnectionConfig object
+var peerConnectionConfig;
+debugger;
+$.ajax({
+    type: "POST",
+    dataType: "json",
+    url: "https://api.xirsys.com/getIceServers",
+    data: {
+        ident: "talw",
+        secret: "60b0c873-4e56-49f7-8ce0-144e2968857c",
+        domain: "www.phonetest.com",
+        application: "default",
+        room: "default",
+        secure: 1
+    },
+    success: function (data, status) {
+        // data.d is where the iceServers object lives
+        peerConnectionConfig = data.d;
+        console.log(peerConnectionConfig);
+    },
+    async: false
+});
+
+
 // create our webrtc connection
 var webrtc = new SimpleWebRTC({
     // the id/element dom element that will hold "our" video
@@ -15,7 +40,9 @@ var webrtc = new SimpleWebRTC({
     autoRequestMedia: false,
     debug: false,
     detectSpeakingEvents: true,
-    autoAdjustMic: false
+    autoAdjustMic: false,
+    //this variable is used for Xirsys stun and turn servers
+    peerConnectionConfig: peerConnectionConfig
     });
 
 // when it's ready, join if we got a room from the URL
