@@ -7267,7 +7267,7 @@
                                 googLeakyBucket: true,
                                 maxWidth: window.screen.width,
                                 maxHeight: window.screen.height,
-                                maxFrameRate: 30,
+                                maxFrameRate: 10,
                                 chromeMediaSource: 'screen'
                             }
                         }
@@ -7305,9 +7305,9 @@
                         chromeMediaSource: 'desktop',
                         chromeMediaSourceId: event.data.sourceId,
                         googLeakyBucket: true,
-                        maxWidth: window.screen.width,
-                        maxHeight: window.screen.height,
-                        maxFrameRate: 3
+                        maxWidth: 320,
+                        maxHeight: 240,
+                        maxFrameRate: 10
                     }}};
                     getUserMedia(constraints, callback);
                 }
