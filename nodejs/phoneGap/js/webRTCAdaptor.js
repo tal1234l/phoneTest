@@ -8,7 +8,7 @@ var room = location.search && location.search.split('?')[1];
 // This object will take in an array of XirSys STUN / TURN servers
 // and override the original peerConnectionConfig object
 var peerConnectionConfig;
-debugger;
+
 $.ajax({
     type: "POST",
     dataType: "json",
@@ -18,7 +18,7 @@ $.ajax({
         secret: "60b0c873-4e56-49f7-8ce0-144e2968857c",
         domain: "www.phonetest.com",
         application: "default",
-        room: "default",
+        room: "12345",
         secure: 1
     },
     success: function (data, status) {

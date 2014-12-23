@@ -294,7 +294,6 @@
         };
 
         SimpleWebRTC.prototype.joinRoom = function (name, cb) {
-            debugger;
             var self = this;
             this.roomName = name;
             this.connection.emit('join', name, function (err, roomDescription) {
@@ -414,7 +413,6 @@
         };
 
         SimpleWebRTC.prototype.createRoom = function (name, cb) {
-            debugger;
             if (arguments.length === 2) {
                 this.connection.emit('create', name, cb);
             } else {
@@ -8184,7 +8182,7 @@
                 transport: {
                     transType: 'iceUdp',
                     candidates: [],
-                    fingerprints: [],
+                    fingerprints: []
                 }
             };
             if (mline.media == 'application') {

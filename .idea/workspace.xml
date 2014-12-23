@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6c86d5a-db82-492e-aaec-b27fdbcf5938" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\myproject\phoneTest\nodejs\phoneGap\imgs\qr.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodejs/phoneGap/config.xml" afterPath="$PROJECT_DIR$/nodejs/phoneGap/config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodejs/phoneGap/index.html" afterPath="$PROJECT_DIR$/nodejs/phoneGap/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodejs/phoneGap/js/simplewebrtc.js" afterPath="$PROJECT_DIR$/nodejs/phoneGap/js/simplewebrtc.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodejs/phoneGap/js/webRTCAdaptor.js" afterPath="$PROJECT_DIR$/nodejs/phoneGap/js/webRTCAdaptor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="phoneTest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,20 +30,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nodejs/phoneGap/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="16" selection-start="172" selection-end="172" vertical-scroll-proportion="0.14731368" vertical-offset="0" max-vertical-offset="4165">
+            <state line="61" column="39" selection-start="1418" selection-end="1418" vertical-scroll-proportion="-5.6666665" vertical-offset="748" max-vertical-offset="4046">
+              <folding>
+                <element signature="n#style#0;n#video#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nodejs/phoneGap/config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="50" selection-start="670" selection-end="670" vertical-scroll-proportion="0.37129486" vertical-offset="0" max-vertical-offset="1275">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="webRTCAdaptor.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nodejs/phoneGap/js/webRTCAdaptor.js">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nodejs/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="17" selection-start="827" selection-end="827" vertical-scroll-proportion="-17.68" vertical-offset="102" max-vertical-offset="4080">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="413" max-vertical-offset="1105">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nodejs/routes/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,7 +73,7 @@
       <file leaf-file-name="simplewebrtc.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nodejs/phoneGap/js/simplewebrtc.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="28" selection-start="1250" selection-end="1250" vertical-scroll-proportion="-6.8" vertical-offset="51" max-vertical-offset="149532">
+            <state line="386" column="47" selection-start="15976" selection-end="15987" vertical-scroll-proportion="-8.04" vertical-offset="6361" max-vertical-offset="149498">
               <folding />
             </state>
           </provider>
@@ -69,8 +94,10 @@
       <list>
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/nodejs/phoneGap/js/kandyAdapter.js" />
-        <option value="$PROJECT_DIR$/nodejs/phoneGap/js/simplewebrtc.js" />
         <option value="$PROJECT_DIR$/nodejs/phoneGap/js/webRTCAdaptor.js" />
+        <option value="$PROJECT_DIR$/nodejs/phoneGap/js/simplewebrtc.js" />
+        <option value="$PROJECT_DIR$/nodejs/phoneGap/config.xml" />
+        <option value="$PROJECT_DIR$/nodejs/phoneGap/js/cordova.js" />
         <option value="$PROJECT_DIR$/nodejs/phoneGap/index.html" />
       </list>
     </option>
@@ -154,6 +181,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phoneTest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phoneTest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodejs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="phoneGap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -177,6 +222,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phoneTest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phoneTest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodejs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -251,7 +314,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -293,7 +356,9 @@
     <entry file="file://$PROJECT_DIR$/nodejs/phoneGap/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="157" column="29" selection-start="5537" selection-end="5546" vertical-scroll-proportion="0.0" vertical-offset="2441" max-vertical-offset="4165">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#video#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -314,7 +379,9 @@
     <entry file="file://$PROJECT_DIR$/nodejs/phoneGap/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="228" column="0" selection-start="9448" selection-end="9448" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4029">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#video#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -380,11 +447,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nodejs/phoneGap/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="717" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nodejs/phoneGap/js/kandyAdapter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="20" selection-start="411" selection-end="411" vertical-scroll-proportion="0.26842105" vertical-offset="0" max-vertical-offset="2142">
@@ -394,23 +456,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nodejs/phoneGap/js/simplewebrtc.js">
+    <entry file="file://$PROJECT_DIR$/nodejs/views/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="28" selection-start="1250" selection-end="1250" vertical-scroll-proportion="-6.8" vertical-offset="51" max-vertical-offset="149532">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="641">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nodejs/phoneGap/js/webRTCAdaptor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="17" selection-start="827" selection-end="827" vertical-scroll-proportion="-17.68" vertical-offset="102" max-vertical-offset="4080">
+        <state line="5" column="46" selection-start="120" selection-end="120" vertical-scroll-proportion="0.13798702" vertical-offset="0" max-vertical-offset="4080">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodejs/phoneGap/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="93" selection-end="93" vertical-scroll-proportion="0.05304212" vertical-offset="0" max-vertical-offset="641">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodejs/bin/www">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="641">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodejs/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodejs/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="641">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodejs/phoneGap/js/simplewebrtc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="386" column="47" selection-start="15976" selection-end="15987" vertical-scroll-proportion="-8.04" vertical-offset="6361" max-vertical-offset="149498">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nodejs/phoneGap/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="16" selection-start="172" selection-end="172" vertical-scroll-proportion="0.14731368" vertical-offset="0" max-vertical-offset="4165">
+        <state line="61" column="39" selection-start="1418" selection-end="1418" vertical-scroll-proportion="-5.6666665" vertical-offset="748" max-vertical-offset="4046">
+          <folding>
+            <element signature="n#style#0;n#video#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodejs/phoneGap/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="50" selection-start="670" selection-end="670" vertical-scroll-proportion="0.37129486" vertical-offset="0" max-vertical-offset="1275">
           <folding />
         </state>
       </provider>
