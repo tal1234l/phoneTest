@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6c86d5a-db82-492e-aaec-b27fdbcf5938" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\myproject\phoneTest\nodejs\phoneGap\imgs\qr.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodejs/phoneGap/config.xml" afterPath="$PROJECT_DIR$/nodejs/phoneGap/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodejs/phoneGap/index.html" afterPath="$PROJECT_DIR$/nodejs/phoneGap/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodejs/phoneGap/js/simplewebrtc.js" afterPath="$PROJECT_DIR$/nodejs/phoneGap/js/simplewebrtc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodejs/phoneGap/js/webRTCAdaptor.js" afterPath="$PROJECT_DIR$/nodejs/phoneGap/js/webRTCAdaptor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="b6c86d5a-db82-492e-aaec-b27fdbcf5938" name="Default" comment="" />
     <ignored path="phoneTest.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nodejs/phoneGap/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="39" selection-start="1418" selection-end="1418" vertical-scroll-proportion="-5.6666665" vertical-offset="748" max-vertical-offset="4046">
+            <state line="61" column="39" selection-start="1418" selection-end="1418" vertical-scroll-proportion="0.50086653" vertical-offset="748" max-vertical-offset="4046">
               <folding>
                 <element signature="n#style#0;n#video#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -41,10 +34,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="config.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nodejs/phoneGap/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="50" selection-start="670" selection-end="670" vertical-scroll-proportion="0.37129486" vertical-offset="0" max-vertical-offset="1275">
+            <state line="14" column="50" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
               <folding />
             </state>
           </provider>
@@ -507,19 +500,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nodejs/phoneGap/index.html">
+    <entry file="file://$PROJECT_DIR$/nodejs/phoneGap/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="39" selection-start="1418" selection-end="1418" vertical-scroll-proportion="-5.6666665" vertical-offset="748" max-vertical-offset="4046">
-          <folding>
-            <element signature="n#style#0;n#video#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="14" column="50" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nodejs/phoneGap/config.xml">
+    <entry file="file://$PROJECT_DIR$/nodejs/phoneGap/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="50" selection-start="670" selection-end="670" vertical-scroll-proportion="0.37129486" vertical-offset="0" max-vertical-offset="1275">
-          <folding />
+        <state line="61" column="39" selection-start="1418" selection-end="1418" vertical-scroll-proportion="0.50086653" vertical-offset="748" max-vertical-offset="4046">
+          <folding>
+            <element signature="n#style#0;n#video#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
